@@ -85,11 +85,11 @@ export default class Tasks2 extends React.Component { // eslint-disable-line rea
           <td> {item.task}</td>
           <td> {item.Partner}</td>
           <td> {item.Article}</td>
-          <td> {item.Time}</td>
+          <td> {item.Time} </td>
           <td> {item.Date_of_Allocation}</td>
           <td> {item.Due_date}</td>
           <td> {item.status}</td>
-          <td><button className="btn btn-info">Completed</button></td>
+          <td><button className="btn btn-info">Submit for Review</button></td>
         </tr>
       );
     });
@@ -163,18 +163,10 @@ export default class Tasks2 extends React.Component { // eslint-disable-line rea
           <div className="ibox float-e-margins m-t-10">
             <div className="ibox-title">
               <div className="row">
-              <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Partner"/></div>
+              <div className="col-md-5">
+                <div className=" form-group"><input type="text" className="form-control" placeholder="Search"/></div>
              </div>
-             <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Manager"/></div>
-             </div>
-             <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Article"/></div>
-             </div>
-             <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Client"/></div>
-             </div>
+             
              <div className="col-md-2">
                 <button className="btn btn-default" onClick={this.show.bind(this)}>Create new Task</button>
              </div>

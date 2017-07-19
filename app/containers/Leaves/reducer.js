@@ -12,6 +12,7 @@ import {
 const initialState = fromJS({});
 
 function leavesReducer(state = initialState, action) {
+  console.log("Leaves");
   switch (action.type) {
     case DEFAULT_ACTION:
       return state;
@@ -19,5 +20,7 @@ function leavesReducer(state = initialState, action) {
       return state;
   }
 }
+
+
 
 export default leavesReducer;

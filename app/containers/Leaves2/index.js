@@ -83,6 +83,7 @@ export default class Leaves2 extends React.Component { // eslint-disable-line re
           <td> {item.Days}</td>
           <td> {item.description}</td>
           <td> {item.Status}</td>
+          <td> <i className="fa fa-pencil" aria-hidden="true" ></i> </td>
         </tr>
       );
     });
@@ -153,7 +154,7 @@ export default class Leaves2 extends React.Component { // eslint-disable-line re
                                   <tbody>
                                   <tr>
                                       <td>
-                                          <button type="button" className="btn btn-danger m-r-sm">50</button>
+                                          <button type="button" className="btn btn-success m-r-sm">50</button>
                                           
                                       </td>
                                       <td>
@@ -167,14 +168,14 @@ export default class Leaves2 extends React.Component { // eslint-disable-line re
                                           Leaves Taken
                                       </td>
                                       <td>
-                                          <button type="button" className="btn btn-primary m-r-sm">20</button>
+                                          <button type="button" className="btn btn-warning m-r-sm">20</button>
                                           
                                       </td>
                                       <td>
                                           Balance
                                       </td>
                                       <td>
-                                          <button type="button" className="btn btn-primary m-r-sm">Apply Leave</button>
+                                          <button type="button" className="btn btn-default m-r-sm">Apply Leave</button>
                                           
                                       </td>
                                       

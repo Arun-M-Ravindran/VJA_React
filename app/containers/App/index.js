@@ -44,8 +44,12 @@ var divStyle = {
 
 export function App(props) {
   return (
-      <div style={divStyle}>
+      <div>
+
+        
+        
         {React.Children.toArray(props.children)}
+        
       </div>
         )
 }

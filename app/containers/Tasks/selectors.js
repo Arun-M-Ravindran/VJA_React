@@ -19,7 +19,14 @@ const makeSelectTasks = () => createSelector(
   (substate) => substate.toJS()
 );
 
-export default makeSelectTasks;
+
+const makeSelectTasksData = () => createSelector(
+  selectTasksDomain(),
+  (substate) => substate.get('tasksData').toJS()
+);
+
+// export default makeSelectTasks;
 export {
   selectTasksDomain,
+  makeSelectTasksData,
 };

@@ -58,18 +58,18 @@ export default class Leaves extends React.Component { // eslint-disable-line rea
   render() {
 
     var tasks = [
-          { numer:' 1', name: 'arun',   Position: 'Manager', leaves: 50, taken: '30', balance: '20',},
-          { numer: 2,   name: 'acd',    Position: 'Article', leaves: 50, taken: '30', balance: '20',  },
-          { numer: 3,   name: 'kgjifj', Position: 'Manager', leaves: 50, taken: '20', balance: '30',},
-          { numer: 4,   name: 'oohdj',  Position: 'Manager', leaves: 50, taken: '30', balance: '20',},
-          { numer:' 1', name: 'kgjifj', Position: 'Article', leaves: 50, taken: '30', balance: '20',},
-          { numer: 2,   name: 'oohdj',  Position: 'Manager', leaves: 50, taken: '30', balance: '20',  },
-          { numer: 3,   name: 'kgjifj', Position: 'Article', leaves: 50, taken: '20', balance: '30',},
-          { numer: 4,   name: 'oohdj',  Position: 'Manager', leaves: 50, taken: '30', balance: '20',},
-          { numer:' 1', name: 'kgjifj', Position: 'Article', leaves: 50, taken: '30', balance: '20',},
-          { numer: 2,   name: 'oohdj',  Position: 'Article', leaves: 50, taken: '30', balance: '20',  },
-          { numer: 3,   name: 'kgjifj', Position: 'Article', leaves: 50, taken: '20', balance: '30',},
-          { numer: 4,   name: 'oohdj',  Position: 'Article', leaves: 50, taken: '30', balance: '20',},
+          { numer: 1,  name: 'arun',   Position: 'Manager', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'},
+          { numer: 2,  name: 'acd',    Position: 'Article', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'  },
+          { numer: 3,  name: 'kgjifj', Position: 'Manager', start: '18-07-2017', end: '21-07-2017', balance: '30', days: 3, description: 'personal'},
+          { numer: 4,  name: 'oohdj',  Position: 'Manager', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'},
+          { numer: 5,  name: 'kgjifj', Position: 'Article', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'},
+          { numer: 6,  name: 'oohdj',  Position: 'Manager', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'  },
+          { numer: 7,  name: 'kgjifj', Position: 'Article', start: '18-07-2017', end: '21-07-2017', balance: '30', days: 3, description: 'personal'},
+          { numer: 8,  name: 'oohdj',  Position: 'Manager', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'},
+          { numer: 9,  name: 'kgjifj', Position: 'Article', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'},
+          { numer: 10, name: 'oohdj',  Position: 'Article', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'  },
+          { numer: 11, name: 'kgjifj', Position: 'Article', start: '18-07-2017', end: '21-07-2017', balance: '30', days: 3, description: 'personal'},
+          { numer: 12, name: 'oohdj',  Position: 'Article', start: '18-07-2017', end: '21-07-2017', balance: '20', days: 3, description: 'personal'},
     ];
 
 
@@ -80,9 +80,12 @@ export default class Leaves extends React.Component { // eslint-disable-line rea
           <td> {item.numer}</td>
           <td> {item.name}</td>
           <td> {item.Position}</td>
-          <td> {item.leaves}</td>
-          <td> {item.taken}</td>
+          <td> {item.start}</td>
+          <td> {item.end}</td>
           <td> {item.balance}</td>
+          <td> {item.days}</td>
+          <td> {item.description}</td>
+          <td> <button className="btn btn-success">Accept</button>  <button className="btn btn-success">Reject</button> <button className="btn btn-danger">History</button></td>
         </tr>
       );
     });
@@ -96,62 +99,13 @@ export default class Leaves extends React.Component { // eslint-disable-line rea
       <div  style={divStyle}>
       <MainView />
 
-
-        <Modal show={this.state.show} onClose={this.close.bind(this)} transitionSpeed={100} >
-            <div className="row">
-              <div className="col-md-4">Total Leaves: 30</div>
-              <div className="col-md-4">Leaves Taken: 30</div>
-              <div className="col-md-4">Balance: 20</div>
-            </div>  
-
-            <div className="ibox-content">
-                                
-            <div className="table-responsive">
-                <table className="table table-striped">
-                    <thead>
-                      <tr >
-                        <th>#</th>
-                        <th>Start Date </th>
-                        <th>End Date </th>
-                        <th>Duration </th>
-                      </tr>
-                  </thead>
-                  <tbody > 
-                    <tr>
-                      <td> 1</td>
-                      <td> 10-07-2017</td>
-                      <td> 14-07-2017</td>
-                      <td> 4</td>
-                    </tr>
-                  </tbody>
-              </table>
-           </div>
-           </div>
-        </Modal>
-
-      
-
-    
-
-
         <div style={aa}>
           
 
-          <div className="ibox float-e-margins m-t-1">
-            <div className="ibox-title">
-              <div className="row">
-              <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Manager"/></div>
-             </div>
-             <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Article"/></div>
-             </div>
-            </div>
-            </div>
-          </div>
+            
 
          
-          <div className="ibox-content">
+          <div className="ibox-content m-t-1">
                                 
             <div className="table-responsive">
                 <table className="table table-striped">
@@ -160,12 +114,15 @@ export default class Leaves extends React.Component { // eslint-disable-line rea
                         <th>#</th>
                         <th>Name </th>
                         <th>Position </th>
-                        <th>Total_Leaves </th>
-                        <th>Leaves Taken </th>
+                        <th>Start Date </th>
+                        <th>End Date </th>
                         <th>Balance</th>
+                        <th>No.of Days</th>
+                        <th>Description</th>
+
                       </tr>
                   </thead>
-                  <tbody onClick={this.show.bind(this)}> 
+                  <tbody> 
                     {listItems}
                   </tbody>
               </table>

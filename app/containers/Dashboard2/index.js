@@ -12,8 +12,8 @@ import MainView from '../../components/Maincomponent/Maincomponent';
 
 var divStyle = {
   // backgroundImage: 'url(' + img + ')',
-  
-  
+
+
   minHeight: "681px",
   opacity: 1,
 };
@@ -44,16 +44,16 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
     return false;
   }
 
-  
+
   render() {
     return (
       <div  style={divStyle}>
-      <MainView className="nav-bar"/>
+        <MainView />
         <div style={aa}>
-            
+
 
               <div className="row m-xs p-t-20">
-                
+
 
                 <div className="col-sm-6">
                     <div className="ibox float-e-margins">
@@ -69,29 +69,29 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
                                   <tr>
                                       <td>
                                           <button type="button" className="btn btn-danger m-r-sm">50</button>
-                                          
+
                                       </td>
                                       <td>
                                           Actual 50%
                                       </td>
                                       <td>
                                           <button type="button" className="btn btn-primary m-r-sm">30</button>
-                                          
+
                                       </td>
                                       <td>
                                           Budget 30%
                                       </td>
-                                      
+
                                   </tr>
                                   <tr>
                                       <td>
                                           <button type="button" className="btn btn-success m-r-sm">20</button>
-                                          
+
                                       </td>
                                       <td>
                                           Efficiency   20%
                                       </td>
-                                      
+
                                   </tr>
                                   </tbody>
                                 </table>
@@ -118,29 +118,29 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
                                   <button type="button" className="btn btn-primary m-r-sm">20</button>
                                   Leaves Taken
                               </td>
-                              
+
                           </tr>
                           <tr>
                               <td>
                                   <button type="button" className="btn btn-info m-r-sm">30</button>
                                   Balance
                               </td>
-                              
-                              
+
+
                           </tr>
-                          
+
                           </tbody>
                       </table>
                   </div>
-                        
+
                   </div>
                 </div>
               </div>
 
               <div className="row m-xs">
-                                  
+
               </div>
- 
+
 <div className="row m-xs">
 
                     <div className="col-lg-12">
@@ -165,7 +165,7 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
                                 </div>
                             </div>
                             <div className="ibox-content">
-                                
+
                                 <div className="table-responsive">
                                     <table className="table table-striped">
                                         <thead>
@@ -173,7 +173,7 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
 
                                             <th>#</th>
                                             <th>Client Name </th>
-                                            
+
                                             <th>Tasks </th>
                                             <th>Article</th>
                                             <th>Reporting Partner</th>
@@ -181,16 +181,16 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
 
                                             <th>Date of Allocation</th>
                                             <th>Due Date </th>
-                                            
+
                                             <th>Status</th>
-                                            
+
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
                                             <td>1</td>
                                             <td>VAS Agencies</td>
-                                            
+
                                             <td>Audit</td>
                                             <td>Anisha</td>
                                             <td>Chacko</td>
@@ -198,12 +198,12 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
                                             <td>17-07-2017</td>
                                             <td>17-07-2017</td>
                                             <td className="c-blue">Work in Progress</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>VAS Agencies</td>
-                                            
+
                                             <td>Audit</td>
                                             <td>Anisha</td>
                                             <td>Chacko</td>
@@ -211,12 +211,12 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
                                             <td>17-07-2017</td>
                                             <td>17-07-2017</td>
                                             <td className="c-blue">Work in Progress</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>VAS Agencies</td>
-                                            
+
                                             <td>Audit</td>
                                             <td>Anisha</td>
                                             <td>Chacko</td>
@@ -224,9 +224,9 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
                                             <td>17-07-2017</td>
                                             <td>17-07-2017</td>
                                             <td className="c-red">Overdue</td>
-                                            
+
                                         </tr>
-                                        
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -235,9 +235,9 @@ export default class Dashboard2 extends React.Component { // eslint-disable-line
                 </div>
 
             </div>
-            
+
         </div>
-        
+
       </div>
     );
   }

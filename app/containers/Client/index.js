@@ -145,6 +145,12 @@ export default class Client extends React.Component { // eslint-disable-line rea
                     <input type="text" className="form-control" placeholder="Client Name" required=""/>
                 </div>
                 <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Contact" required=""/>
+                </div>
+                <div className="form-group">
+                    <input type="text" className="form-control" placeholder="E-mail" required=""/>
+                </div>
+                <div className="form-group">
                     <input type="text" className="form-control" placeholder="Door Number" required=""/>
                 </div>
                 <div className="form-group">
@@ -168,6 +174,8 @@ export default class Client extends React.Component { // eslint-disable-line rea
                 <div className="form-group">
                     <input type="text" className="form-control" placeholder="Country" required=""/>
                 </div>
+                
+                
                 <div className="row text-center">
                   <div className="col-lg-6"><button className="btn btn-primary block full-width m-b" >Save</button></div>
                   <div className="col-lg-6"><button className="btn btn-primary block full-width m-b" >Cancel</button></div>

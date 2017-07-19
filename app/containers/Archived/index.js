@@ -1,5 +1,5 @@
   /*
- * Tasks
+ * aRCHIVED
  *
  * List all the features
  */
@@ -151,21 +151,10 @@ export default class Archived extends React.Component { // eslint-disable-line r
           <div className="ibox float-e-margins m-t-1">
             <div className="ibox-title">
               <div className="row">
-                <div className="col-md-2 text-center"> 
-                   <input type="text" className="form-control" placeholder="Search Partner" required=""/>
+                <div className="col-md-5 text-center"> 
+                   <input type="text" className="form-control" placeholder="Search" required=""/>
                   </div>
-                <div className="col-md-2 form-group">
-                    <input type="text" className="form-control" placeholder="Search Manager" required=""/>
-                </div>
-                <div className="col-md-2 form-group">
-                    <input type="text" className="form-control" placeholder="Search Article" required=""/>
-                </div>
-                <div className="col-md-2 form-group">
-                    <input type="text" className="form-control" placeholder="Search Client" required=""/>
-                </div>
-                <div className="col-md-2 form-group">
-                    <input type="text" className="form-control" placeholder="Search Task" required=""/>
-                </div>
+                
                 
                   
               </div>

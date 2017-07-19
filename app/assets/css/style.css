@@ -61,7 +61,7 @@ h5 {
 }
 .nav.navbar-top-links > li > a:hover,
 .nav.navbar-top-links > li > a:focus {
-  background-color: transparent;
+  background-color: #050f17;
 }
 .nav > li > a i {
   margin-right: 6px;
@@ -70,7 +70,7 @@ h5 {
   border: 0;
 }
 .navbar-default {
-  background-color: transparent;
+  background-color: #050f17;
   border-color: #2f4050;
 }
 .navbar-top-links li {
@@ -988,7 +988,7 @@ fieldset[disabled] .btn-white.active {
 }
 .btn-outline {
   color: inherit;
-  background-color: transparent;
+  background-color: #050f17;
   transition: all .5s;
 }
 .btn-rounded {
@@ -2445,7 +2445,7 @@ label.error {
   border-bottom: 1px solid #e7eaec;
 }
 .ngCell {
-  background-color: transparent;
+  background-color: #050f17;
 }
 .ngHeaderCell {
   border-right: none;
@@ -6900,7 +6900,7 @@ body.landing-page {
   padding: 15px 0;
 }
 .landing-page .navbar-default {
-  background-color: transparent;
+  background-color: #050f17;
   border-color: transparent;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -8557,7 +8557,7 @@ body.md-skin {
   height: 20px;
 }
 
-.frameStyle  = { 
+.frameStyle  = {
   width: 100%;
   display: block;
   border: 0px;
@@ -8617,7 +8617,7 @@ body.md-skin {
 }
 
 .c-red {
-  color: #FA0404; 
+  color: #FA0404;
 }
 
 .search-width {
@@ -8626,4 +8626,9 @@ body.md-skin {
 
 .nav-width {
   width:20px;
+}
+
+.fnt-1 {
+
+  font-size: 11px;
 }

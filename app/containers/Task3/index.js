@@ -45,18 +45,18 @@ export default class Tasks3 extends React.Component { // eslint-disable-line rea
   render() {
 
     var tasks = [
-          { numer: 1,   client: 'VAS', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Work in Progress' },
-          { numer: 2,   client: 'XYZ', task: 'Audit',   Partner: 'Chacko',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Overdue' },
-          { numer: 3,   client: 'VAS', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Overdue' },
-          { numer: 4,   client: 'XYZ', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Work in Progress' },
-          { numer: 5,   client: 'VAS', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Work in Progress' },
-          { numer: 6,   client: 'XYZ', task: 'Audit',   Partner: 'Chacko',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Work in Progress' },
-          { numer: 7,   client: 'VAS', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Overdue' },
-          { numer: 8,   client: 'XYZ', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed' },
-          { numer: 9,   client: 'VAS', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed' },
-          { numer: 10,  client: 'XYZ', task: 'Audit',   Partner: 'Chacko',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed' },
-          { numer: 11,  client: 'VAS', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed' },
-          { numer: 12,  client: 'XYZ', task: 'Audit',   Partner: 'Sharon',   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed ' },
+          { numer: 1,   client: 'VAS', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Work in Progress' },
+          { numer: 2,   client: 'XYZ', task: 'Audit',   Partner: 'Chacko', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Overdue' },
+          { numer: 3,   client: 'VAS', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Overdue' },
+          { numer: 4,   client: 'XYZ', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Work in Progress' },
+          { numer: 5,   client: 'VAS', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Work in Progress' },
+          { numer: 6,   client: 'XYZ', task: 'Audit',   Partner: 'Chacko', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Work in Progress' },
+          { numer: 7,   client: 'VAS', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Overdue' },
+          { numer: 8,   client: 'XYZ', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed' },
+          { numer: 9,   client: 'VAS', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed' },
+          { numer: 10,  client: 'XYZ', task: 'Audit',   Partner: 'Chacko', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed' },
+          { numer: 11,  client: 'VAS', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed' },
+          { numer: 12,  client: 'XYZ', task: 'Audit',   Partner: 'Sharon', time: 1,   Manager: 'Anisha',   Date_of_Allocation:'17-06-17', Due_date: '17-06-17', status: 'Freezed ' },
     ];
 
 
@@ -69,6 +69,7 @@ export default class Tasks3 extends React.Component { // eslint-disable-line rea
           <td> {item.task}</td>
           <td> {item.Partner}</td>
           <td> {item.Manager}</td>
+          <td> {item.time}</td>
           <td> {item.Date_of_Allocation}</td>
           <td> {item.Due_date}</td>
           <td> {item.status}</td>
@@ -104,15 +105,8 @@ export default class Tasks3 extends React.Component { // eslint-disable-line rea
           <div className="ibox float-e-margins m-t-10">
             <div className="ibox-title">
               <div className="row">
-              <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Partner"/></div>
-             </div>
-             <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Manager"/></div>
-             </div>
-             
-             <div className="col-md-2">
-                <div className=" form-group"><input type="text" className="form-control" placeholder="Search Task"/></div>
+              <div className="col-md-5">
+                <div className=" form-group"><input type="text" className="form-control" placeholder="Search"/></div>
              </div>
              
             </div>
@@ -131,6 +125,7 @@ export default class Tasks3 extends React.Component { // eslint-disable-line rea
                         <th>Tasks </th>
                         <th>Partner </th>
                         <th>Manager </th>
+                        <th>Time </th>
                         <th>Date of Allocation </th>
                         <th>Due Date </th>
                         <th>Status</th>

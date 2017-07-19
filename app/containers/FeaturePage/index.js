@@ -16,8 +16,8 @@ import MainView from '../../components/Maincomponent/Maincomponent';
 
 var divStyle = {
   // backgroundImage: 'url(' + img + ')',
-  
-  
+
+
   minHeight: "681px",
   opacity: 1,
 };
@@ -46,13 +46,14 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
     return false;
   }
 
-  
+
 
   render() {
     return (
       <div  style={divStyle}>
-      <MainView className="nav-bar"/>
+        <MainView />
         <div style={aa}>
+
         <div className="row">
         <div className="col-lg-12">
         <div className="ibox float-e-margins">
@@ -101,8 +102,12 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
           </div>
             </div>
             </div>
-            <div className="col-md-4 p-t-20 m-l-xs">
-            <div className=" form-group"><input type="text" className="form-control" id="usr" placeholder="Search task"/></div>
+            <div className="col-md-2 p-t-20 m-l-xs">
+              <div className=" form-group"><input type="text" className="form-control" id="usr" placeholder="Search task"/></div>
+             </div>
+             <div className="col-md-3 p-t-20">
+              Email : sample@gmail.com <br />
+              Contact : +91 9494006060
              </div>
             </div>
             </div></div></div></div>
@@ -117,7 +122,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                         </div>
                         <div className="ibox-content">
                             <PieChart data={chartData} options={{animateRotate: true}} width="100" height="100"/>
-                        </div>  
+                        </div>
                     </div>
                 </div>
 
@@ -128,7 +133,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                       </div>
                       <div className="ibox-content">
                         <PieChart data={chartData} options={{animateRotate: true}} width="100" height="100"/>
-                      </div>  
+                      </div>
                     </div>
                 </div>
 
@@ -140,7 +145,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                       <div className="ibox-content">
                         <PieChart data={chartData} options={{animateRotate: true}} width="100" height="100"/>
 
-                      </div>  
+                      </div>
                     </div>
                 </div>
 
@@ -152,31 +157,20 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                       <div className="ibox-content">
                         <PieChart data={chartData} options={{animateRotate: true}} width="100" height="100"/>
 
-                      </div>  
+                      </div>
                     </div>
                 </div>
             </div>
 
- 
+
 <div className="row m-xs">
 
-                    <div className="col-lg-12">
+                    <div className="col-lg-8">
                         <div className="ibox float-e-margins">
-                            
-
-
-
-
-
-
-
-
-
-
                             <div className="ibox-content">
-                                
+
                                 <div className="table-responsive">
-                                    <table className="table table-striped">
+                                    <table className="table table-striped fnt-1">
                                         <thead>
                                         <tr>
 
@@ -187,10 +181,10 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                                             <th>Article</th>
                                             <th>Time</th>
                                             <th>Date of Allocation</th>
-                                            
+
                                             <th>Due Date </th>
                                             <th>Status</th>
-                                            
+
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -204,7 +198,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                                             <td>17-07-2017</td>
                                             <td>17-07-2017</td>
                                             <td className="c-blue">Work in Progress</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -216,7 +210,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                                             <td>17-07-2017</td>
                                             <td>17-07-2017</td>
                                             <td className="c-blue">Work in Progress</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -228,7 +222,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                                             <td>17-07-2017</td>
                                             <td>17-07-2017</td>
                                             <td className="c-red">Overdue</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -240,19 +234,24 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                                             <td>17-07-2017</td>
                                             <td>17-07-2017</td>
                                             <td className="c-red">Overdue</td>
-                                            
+
                                         </tr>
-                                        
+
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                       </div>
-                </div>
+                </div><div className="col-lg-4">
+                <div className="ibox float-e-margins">
+                  <div className="ibox-content">Notifications</div>
+                </div>  </div>
+
 
             </div>
-
         </div>
+
+
       </div>
     );
   }

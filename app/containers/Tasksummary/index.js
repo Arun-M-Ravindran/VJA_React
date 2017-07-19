@@ -71,18 +71,18 @@ export default class Tasksummary extends React.Component { // eslint-disable-lin
   render() {
 
     var tasks = [
-          { number: 1, client: 'Korath and Sons Financiers', task: 'Audit',Budjet:'2000', Actual: '1100', Profit: '900',Time: '1', Partner: 'Anisha', },
-          { number: 2, client: 'ESQUIRE FASHIONS PVT LTD', task: 'Audit',Budjet:'1000', Actual: '100', Profit: '123', Time: '11', Partner: 'Anisha',},
-          { number: 3, client: 'Esquire Machine & Tools Pvt Ltd', task: 'Audit',Budjet:'1000', Actual: '', Profit: '',Time: '10', Partner: 'Anisha', },
-          { number: 4, client: 'Barakath Garments India Private Limited', task: 'Audit',Budjet:'1000', Actual: '11000', Profit: '1000',Time: '2', Partner: 'Anisha',},
-          { number: 5, client: 'SysGlob Software Solutions Pvt Ltd.', task: 'Audit',Budjet:'1000', Actual: '', Profit: '',Time: '5', Partner: 'Anisha',},
-          { number: 6, client: 'Tablez Properties Pvt.Ltd', task: 'Audit',Budjet:'1000', Actual: '', Profit: '',Time: '6', Partner: 'Anisha', },
-          { number: 7, client: 'Maleth Logistics', task: 'Audit',Budjet:'1000', Actual: '1100', Profit: '0',Time: '4', Partner: 'Anisha',},
-          { number: 8, client: 'CENTRAL METALEX', task: 'Audit',Budjet:'11000', Actual: '10000', Profit: '1000',Time: '12', Partner: 'Anisha',},
-          { number: 9, client: 'ST JOHN S VISITATION EDUCATIONAL TRUST', task: 'Audit', Budjet:'1000', Actual: '500', Profit: '500',Time: '3', Partner: 'Anisha',},
-          { number: 10, client: 'Pegasus Event Management', task: 'Audit',Budjet:'1000', Actual: '', Profit: '',Time: '8', Partner: 'Anisha',},
-          { number: 11, client: 'KANJAN JUNGA OWNERS ASSOCIATION', task: 'Audit',Budjet:'1000', Actual: '', Profit: '',Time: '0', Partner: 'Anisha',},
-          { number: 12, client: 'Brigade Enterprises Ltd', task: 'Audit',Budjet:'1000', Actual: '11000', Profit: '100',Time: '1', Partner: 'Anisha',},
+          { number: 1,  client: 'Korath and Sons Financiers',             Efficiency: 5, Profitability: '1000',  Partner: 'Anisha', },
+          { number: 2,  client: 'ESQUIRE FASHIONS PVT LTD',               Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
+          { number: 3,  client: 'Esquire Machine & Tools Pvt Ltd',        Efficiency: 5, Profitability: '1000',  Partner: 'Anisha', },
+          { number: 4,  client: 'Barakath Garments India Private Limited',Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
+          { number: 5,  client: 'SysGlob Software Solutions Pvt Ltd.',    Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
+          { number: 6,  client: 'Tablez Properties Pvt.Ltd',              Efficiency: 5, Profitability: '1000',  Partner: 'Anisha', },
+          { number: 7,  client: 'Maleth Logistics',                       Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
+          { number: 8,  client: 'CENTRAL METALEX',                        Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
+          { number: 9,  client: 'ST JOHN S VISITATION EDUCATIONAL TRUST', Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
+          { number: 10, client: 'Pegasus Event Management',               Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
+          { number: 11, client: 'KANJAN JUNGA OWNERS ASSOCIATION',        Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
+          { number: 12, client: 'Brigade Enterprises Ltd',                Efficiency: 5, Profitability: '1000',  Partner: 'Anisha',},
     ];
 
 
@@ -92,12 +92,9 @@ export default class Tasksummary extends React.Component { // eslint-disable-lin
         <tr id={i}>
           <td > {item.number}</td>
           <td className="c-blue">  {item.client}</td>
-          <td> {item.task}</td>
           <td> {item.Partner}</td>
-          <td> {item.Budjet}</td>
-          <td> {item.Actual}</td>
-          <td> {item.Profit}</td>
-          <td> {item.Time}</td>
+          <td> {item.Efficiency}</td>
+          <td> {item.Profitability}</td>
         </tr>
       );
     });
@@ -127,17 +124,17 @@ export default class Tasksummary extends React.Component { // eslint-disable-lin
                       <tr>
                         <td className="text-center"> 1</td>
                         <td className="text-center c-blue"x><Link to="/tasks1">Audit</Link></td>
-                        <td className="text-center">Work in Progress</td>
+                        <td className="text-center">Finished</td>
                       </tr>
                       <tr>
                         <td className="text-center"> 1</td>
                         <td className="text-center c-blue"x><Link to="/tasks1">Audit</Link></td>
-                        <td className="text-center">Work in Progress</td>
+                        <td className="text-center">Finished</td>
                       </tr>
                       <tr>
                         <td className="text-center"> 1</td>
                         <td className="text-center c-blue"x><Link to="/tasks1">Audit</Link></td>
-                        <td className="text-center">Work in Progress</td>
+                        <td className="text-center">Finished</td>
                       </tr>
                   </thead>
                   
@@ -155,20 +152,15 @@ export default class Tasksummary extends React.Component { // eslint-disable-lin
             <div className="ibox-title">
               <div className="row">
                 <div className="col-md-2 text-center"> 
-                   <input type="text" className="form-control" placeholder="Search Partner" required=""/>
+                   Task Summary
+                </div>
+                <div className="col-md-2 text-center"> 
+                   Leaves
+                </div>
+                <div className="col-md-5 text-center"> 
+                   <input type="text" className="form-control" placeholder="Search" required=""/>
                   </div>
-                <div className="col-md-2 form-group">
-                    <input type="text" className="form-control" placeholder="Search Manager" required=""/>
-                </div>
-                <div className="col-md-2 form-group">
-                    <input type="text" className="form-control" placeholder="Search Article" required=""/>
-                </div>
-                <div className="col-md-2 form-group">
-                    <input type="text" className="form-control" placeholder="Search Client" required=""/>
-                </div>
-                <div className="col-md-2 form-group">
-                    <input type="text" className="form-control" placeholder="Search Task" required=""/>
-                </div>
+                
                 
                   
               </div>
@@ -181,7 +173,7 @@ export default class Tasksummary extends React.Component { // eslint-disable-lin
                 <div className="col-sm-6">
                     <div className="ibox float-e-margins">
                         <div className="ibox-title">
-                            <h5>Overall Task Summary</h5>
+                            <h5> Task Efficiency</h5>
                         </div>
 
                         <div className="ibox-content">
@@ -227,7 +219,104 @@ export default class Tasksummary extends React.Component { // eslint-disable-lin
                 <div className="col-sm-6">
                     <div className="ibox float-e-margins">
                        <div className="ibox-title">
-                            <h5>Overall Task Efficiency</h5>
+                            <h5> Task Profitability</h5>
+                        </div>
+                        <div className="ibox-content">
+                            <div className="row">
+                              <div className="col-sm-4"><PieChart data={chartData} options={{animateRotate: true}} width="100" height="100"/></div>
+                              <div className="col-sm-4">
+                                <table className="table">
+                                  <tbody>
+                                  <tr>
+                                      <td>
+                                          <button type="button" className="btn btn-danger m-r-sm">50</button>
+                                          
+                                      </td>
+                                      <td>
+                                          Actual 50%
+                                      </td>
+                                      <td>
+                                          <button type="button" className="btn btn-primary m-r-sm">30</button>
+                                          
+                                      </td>
+                                      <td>
+                                          Budget 30%
+                                      </td>
+                                      
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <button type="button" className="btn btn-success m-r-sm">20</button>
+                                          
+                                      </td>
+                                      <td>
+                                          Efficiency   20%
+                                      </td>
+                                      
+                                  </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+            <div className="row  m-xs">
+                <div className="col-sm-6">
+                    <div className="ibox float-e-margins">
+                        <div className="ibox-title">
+                            <h5> Task Status</h5>
+                        </div>
+
+                        <div className="ibox-content">
+                            <div className="row">
+                              <div className="col-sm-4"><PieChart data={chartData} options={{animateRotate: true}} width="100" height="100"/></div>
+                              <div className="col-sm-4">
+                                <table className="table">
+                                  <tbody>
+                                  <tr>
+                                      <td>
+                                          <button type="button" className="btn btn-danger m-r-sm">50</button>
+                                          
+                                      </td>
+                                      <td>
+                                          Actual 50%
+                                      </td>
+                                      <td>
+                                          <button type="button" className="btn btn-primary m-r-sm">30</button>
+                                          
+                                      </td>
+                                      <td>
+                                          Budget 30%
+                                      </td>
+                                      
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <button type="button" className="btn btn-success m-r-sm">20</button>
+                                          
+                                      </td>
+                                      <td>
+                                          Profit 20%
+                                      </td>
+                                      
+                                  </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div className="col-sm-6">
+                    <div className="ibox float-e-margins">
+                       <div className="ibox-title">
+                            <h5> Nature of Task</h5>
                         </div>
                         <div className="ibox-content">
                             <div className="row">
@@ -276,6 +365,7 @@ export default class Tasksummary extends React.Component { // eslint-disable-lin
 
 
 
+
           <div className="ibox-content">
                                 
             <div className="table-responsive">
@@ -284,12 +374,9 @@ export default class Tasksummary extends React.Component { // eslint-disable-lin
                       <tr >
                         <th>#</th>
                         <th>Client Name </th>
-                        <th>Tasks</th>
                         <th>Partner</th>
-                        <th>Budjet</th>
-                        <th>Actuals</th>
-                        <th>Time </th>
-                        <th>Profit</th>
+                        <th>Efficiency</th>
+                        <th>Profitability</th>
                       </tr>
                   </thead>
                   <tbody onClick={this.show.bind(this)}>

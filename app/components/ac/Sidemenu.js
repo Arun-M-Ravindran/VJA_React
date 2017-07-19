@@ -59,9 +59,6 @@ class Sidemenu extends Component {
                          <li className={this.activeRoute("/archived")}>
                             <Link to="/archived"><i className="fa fa-calendar"></i> <span className="nav-label">Archived Tasks</span></Link>
                         </li>
-                        <li className={this.activeRoute("/report")}>
-                            <Link to="/report"><i className="fa fa-book"></i> <span className="nav-label">Reports</span></Link>
-                        </li>
                         <li className={this.activeRoute("/leave")}>
                             <Link to="/leave"><i className="fa fa-calendar"></i> <span className="nav-label">Leaves</span></Link>
                         </li>
